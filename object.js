@@ -97,7 +97,8 @@ const car = {
       console.log(`Make: ${this.make}, Model: ${this.model}, Year: ${this.year}`);
     },
     age: function() {
-      const currentYear = new Date().getFullYear();
+      const currentDate = new Date();
+      const currentYear = currentDate.getFullYear();
       const carAge = currentYear - this.year;
       return carAge;
     }
