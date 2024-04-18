@@ -67,7 +67,7 @@ const students = [
     { name: 'Jill', scores: [85, 90, 84] },
   ];
 function highScores(){
-    students.filter(student => {
+    return students.filter(student => {
         let avg = student.scores.reduce((score1,score2) => score1 + score2) / student.scores.length;
         return avg >= 85;
     })
